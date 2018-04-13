@@ -5,57 +5,104 @@
   outline: none;
 }
 
-/* @font-face {
-  font-family: "Playfair-Bold";
-  src: url("fonts/PlayfairDisplay-Bold.otf");
-  font-style: normal;
-  font-weight:700;
-}
 @font-face {
-  font-family: "Playfair-BoldItalic";
-  src: url("fonts/PlayfairDisplay-BoldItalic.otf");
-  font-style: italic;
-  font-weight: 700;
+    font-family: 'Raleway';
+    src: url('./fonts/Raleway-Light.eot');
+    src: url('./fonts/Raleway-Light.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/Raleway-Light.woff2') format('woff2'),
+        url('./fonts/Raleway-Light.woff') format('woff'),
+        url('./fonts/Raleway-Light.ttf') format('truetype'),
+        url('./fonts/Raleway-Light.svg#./fonts/Raleway-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
 }
+
 @font-face {
-  font-family: "Playfair-Italic";
-  src: url("fonts/PlayfairDisplay-Italic.otf");
-  font-style: italic;
-  font-weight: 400;
+    font-family: 'Raleway';
+    src: url('./fonts/Raleway-Medium.eot');
+    src: url('./fonts/Raleway-Medium.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/Raleway-Medium.woff2') format('woff2'),
+        url('./fonts/Raleway-Medium.woff') format('woff'),
+        url('./fonts/Raleway-Medium.ttf') format('truetype'),
+        url('./fonts/Raleway-Medium.svg#./fonts/Raleway-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
 }
+
 @font-face {
-  font-family: "Playfair-Regular";
-  src: url("fonts/PlayfairDisplay-Regular.otf");
-  font-style: normal;
-  font-weight: 400;
+    font-family: 'Raleway';
+    src: url('./fonts/Raleway-MediumItalic.eot');
+    src: url('./fonts/Raleway-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/Raleway-MediumItalic.woff2') format('woff2'),
+        url('./fonts/Raleway-MediumItalic.woff') format('woff'),
+        url('./fonts/Raleway-MediumItalic.ttf') format('truetype'),
+        url('./fonts/Raleway-MediumItalic.svg#./fonts/Raleway-MediumItalic') format('svg');
+    font-weight: 500;
+    font-style: italic;
 }
+
 @font-face {
-  font-family: "Raleway-Light";
-  src: url("fonts/Raleway-Light.ttf");
-  font-style: normal;
-  font-weight: 400;
+    font-family: 'Raleway';
+    src: url('./fonts/Raleway-LightItalic.eot');
+    src: url('./fonts/Raleway-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/Raleway-LightItalic.woff2') format('woff2'),
+        url('./fonts/Raleway-LightItalic.woff') format('woff'),
+        url('./fonts/Raleway-LightItalic.ttf') format('truetype'),
+        url('./fonts/Raleway-LightItalic.svg#./fonts/Raleway-LightItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
 }
+
 @font-face {
-  font-family: "Raleway-LightItalic";
-  src: url("fonts/Raleway-LightItalic.ttf");
-  font-style: italic;
-  font-weight: 400;
+    font-family: 'Playfair Display';
+    src: url('./fonts/PlayfairDisplay-BoldItalic.eot');
+    src: url('./fonts/PlayfairDisplay-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/PlayfairDisplay-BoldItalic.woff2') format('woff2'),
+        url('./fonts/PlayfairDisplay-BoldItalic.woff') format('woff'),
+        url('./fonts/PlayfairDisplay-BoldItalic.ttf') format('truetype'),
+        url('./fonts/PlayfairDisplay-BoldItalic.svg#./fonts/PlayfairDisplay-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
 }
+
 @font-face {
-  font-family: "Raleway-MediumItalic";
-  src: url("fonts/Raleway-MediumItalic.ttf");
-  font-style: italic;
-  font-weight: 700;
+    font-family: 'Playfair Display';
+    src: url('./fonts/PlayfairDisplay-Italic.eot');
+    src: url('./fonts/PlayfairDisplay-Italic.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/PlayfairDisplay-Italic.woff2') format('woff2'),
+        url('./fonts/PlayfairDisplay-Italic.woff') format('woff'),
+        url('./fonts/PlayfairDisplay-Italic.ttf') format('truetype'),
+        url('./fonts/PlayfairDisplay-Italic.svg#./fonts/PlayfairDisplay-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
 }
+
 @font-face {
-  font-family: "Raleway-Medium";
-  src: url("fonts/Raleway-Medium.ttf");
-  font-style: normal;
-  font-weight: 700;
-} */
+    font-family: 'Playfair Display';
+    src: url('./fonts/PlayfairDisplay-Bold.eot');
+    src: url('./fonts/PlayfairDisplay-Bold.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/PlayfairDisplay-Bold.woff2') format('woff2'),
+        url('./fonts/PlayfairDisplay-Bold.woff') format('woff'),
+        url('./fonts/PlayfairDisplay-Bold.ttf') format('truetype'),
+        url('./fonts/PlayfairDisplay-Bold.svg#./fonts/PlayfairDisplay-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('./fonts/PlayfairDisplay-Regular.eot');
+    src: url('./fonts/PlayfairDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/PlayfairDisplay-Regular.woff2') format('woff2'),
+        url('./fonts/PlayfairDisplay-Regular.woff') format('woff'),
+        url('./fonts/PlayfairDisplay-Regular.ttf') format('truetype'),
+        url('./fonts/PlayfairDisplay-Regular.svg#./fonts/PlayfairDisplay-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
 html {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 header {
@@ -79,12 +126,6 @@ h2 {
 
 p {
   font-family: "Playfair Display", serif;
-}
-
-footer {
-  width: 100%;
-  height: 100px;
-  background-color: rgb(36, 36, 36);
 }
 
 a {
@@ -116,7 +157,7 @@ a {
 #catalog {
   width: 100%;
   height: 250px;
-  background-color: purple;
+  background-color: white;
 }
 
 /* Wave background in fifth section */
@@ -133,7 +174,7 @@ a {
 .nav {
   margin: 0 auto;
   padding: 20px;
-  width: 265px;
+  width: auto;
   height: 100px;
 }
 
@@ -145,7 +186,7 @@ a {
 
 .top-left {
   align-self: flex-start;
-  flex: 0 1 50%;
+  /* flex: 0 1 50%; */
 }
 
 .top-right {
@@ -176,30 +217,58 @@ a {
   position: absolute;
   text-align: center;
   text-shadow: 2px 2px 4px hsla(0, 0%, 39%, 0.8);
-  text-transform: uppercase;
   top: 50%;
   transform: translate(-50%, -50%);
   width: 80%;
+  font-size: 3.75rem;
 }
 
 .season {
   font-family: "Playfair Display", serif;
+  font-weight: 300;
 }
 
 .new-collection {
+  font-family: "Raleway";
+  text-transform: uppercase;
   font-size: 1.25rem;
   margin-bottom: 1.5rem;
+  font-weight: 400;
 }
 
 .about {
   font-size: 1.15rem;
+  position: relative;
+  top: 50px;
+}
+
+.subscribe-form{
+  display: block;
+    margin: 2rem auto 0;
+    position: relative;
+    width: 90%;
+}
+
+.update p{
+  font-family: "Raleway";
+  font-size: 1.2rem;
+  letter-spacing: 0.05rem;
+  font-weight:300;
+}
+
+.about p{
+  font-family: "Raleway";
+  font-size: 1.2rem;
+  letter-spacing: 0.05rem;
+  font-weight:300;
 }
 
 /* Initalization of grid for third section, 6 boxes in total */
 .catagoties {
   display: grid;
-  grid-template: 1fr 1fr / 1fr 1fr 1fr 1fr;
+  /* grid-template: 1fr 1fr / 1fr 1fr 1fr 1fr; */
   height: 400px;
+  grid-gap: 20px;
 }
 
 .mens {
@@ -222,6 +291,7 @@ a {
       rgba(0, 0, 0, 0.25)
     ),
     url(images/trends-category.jpg);
+    grid-area: 2 / 1 ;
   background-size: cover, cover;
 }
 
@@ -232,6 +302,7 @@ a {
       rgba(0, 0, 0, 0.25)
     ),
     url(images/glasses-category.jpg);
+    grid-area: 2 / 2;
   background-size: cover, cover;
 }
 
@@ -292,17 +363,35 @@ a {
   transform: translate(-50%, -50%);
 }
 
-.social{
-    text-align: right;
-    margin-right: 10px;
-    line-height: 1.5;
-    display: inline-block;
+footer {
+  width: 100%;
+  height: 400px;
+  background-color: rgb(36, 36, 36);
+
+}
+
+.social-words{
+  display: none;
+}
+
+.flexy{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-between;
+
 }
 
 .bottom-left{
-    text-align: left;
-    display: inline-block;
-    line-height: 1.5;
+  text-align: center;
+  line-height: 1.5;
+  margin-top: 10px;
+}
+
+.social{
+  text-align: center;
+  line-height: 1.5;
+  margin-top: 10px;
 }
 
 .resize {
@@ -310,4 +399,30 @@ a {
   max-width: 100px;
   height: 50%;
   max-height: 300px;
+}
+
+@media screen and (min-width: 600px) {
+.flexy{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  max-width: 1240px;
+}
+
+.bottom-left{
+    text-align: left;
+    line-height: 1.5;
+}
+
+.social{
+    text-align: right;
+    margin-right: 10px;
+    line-height: 1.5;
+}
+
+.social-words{
+  display: inline;
+}
+
+
 }
