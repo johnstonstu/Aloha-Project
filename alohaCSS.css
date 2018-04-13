@@ -266,8 +266,13 @@ a {
 /* Initalization of grid for third section, 6 boxes in total */
 .catagoties {
   display: grid;
+  grid-template-areas: "a a"
+                       "b c"
+                       "d e"
+                       "f f";
+
   /* grid-template: 1fr 1fr / 1fr 1fr 1fr 1fr; */
-  height: 400px;
+  height: 200vh;
   grid-gap: 20px;
 }
 
@@ -281,8 +286,11 @@ a {
     ),
     url(images/mens-category.jpg);
 
+  grid-area: a;
+  width: 100%;
+
   /* Row,col / row,col */
-  grid-area: 1 / 1 / 2 / 3;
+  /* grid-area: 1 / 1 / 2 / 3; */
   background-size: cover, cover;
 }
 
@@ -293,7 +301,9 @@ a {
       rgba(0, 0, 0, 0.25)
     ),
     url(images/trends-category.jpg);
-    grid-area: 2 / 1 ;
+    /* grid-area: 2 / 1 ; */
+    grid-area: b;
+    /* grid-row: 2; */
   background-size: cover, cover;
 }
 
@@ -304,7 +314,7 @@ a {
       rgba(0, 0, 0, 0.25)
     ),
     url(images/glasses-category.jpg);
-    grid-area: 2 / 2;
+    grid-area: c;
   background-size: cover, cover;
 }
 
@@ -315,6 +325,8 @@ a {
       rgba(0, 0, 0, 0.25)
     ),
     url(images/sale-category.jpg);
+    grid-area: d;
+
   background-size: cover, cover;
 }
 
@@ -325,6 +337,7 @@ a {
       rgba(0, 0, 0, 0.25)
     ),
     url(images/bags-category.jpg);
+    grid-area: e;
   background-size: cover, cover;
 }
 
@@ -336,7 +349,7 @@ a {
     ),
     url(images/womens-category.jpg);
   background-size: cover, cover;
-  grid-area: 2/3/3/5;
+  grid-area: f;
 }
 
 .white-text {
@@ -425,6 +438,82 @@ footer {
 .social-words{
   display: inline;
 }
+
+.catagoties {
+  display: grid;
+  /* grid-template: 1fr 1fr / 1fr 1fr 1fr 1fr; */
+  height: 400px;
+  grid-gap: 20px;
+}
+
+/* test fot git update */
+
+.mens {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.25) 0,
+      rgba(0, 0, 0, 0.25)
+    ),
+    url(images/mens-category.jpg);
+
+  /* Row,col / row,col */
+  grid-area: 1 / 1 / 2 / 3;
+  background-size: cover, cover;
+}
+
+.trends {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.25) 0,
+      rgba(0, 0, 0, 0.25)
+    ),
+    url(images/trends-category.jpg);
+    grid-area: 2 / 1 ;
+  background-size: cover, cover;
+}
+
+.glasses {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.25) 0,
+      rgba(0, 0, 0, 0.25)
+    ),
+    url(images/glasses-category.jpg);
+    grid-area: 2 / 2;
+  background-size: cover, cover;
+}
+
+.sale {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.25) 0,
+      rgba(0, 0, 0, 0.25)
+    ),
+    url(images/sale-category.jpg);
+  background-size: cover, cover;
+}
+
+.bags {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.25) 0,
+      rgba(0, 0, 0, 0.25)
+    ),
+    url(images/bags-category.jpg);
+  background-size: cover, cover;
+}
+
+.womens {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.25) 0,
+      rgba(0, 0, 0, 0.25)
+    ),
+    url(images/womens-category.jpg);
+  background-size: cover, cover;
+  grid-area: 2/3/3/5;
+}
+
 
 
 }
