@@ -1,58 +1,142 @@
-/* Include external fonts but lets try google font api */
 
 * {
   box-sizing: border-box;
   outline: none;
 }
 
+/* css reset */
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
+
+/* include external fonts */
 
 @font-face {
   font-family: "Raleway";
@@ -192,6 +276,17 @@ a {
   text-decoration: none;
 }
 
+li {
+  display: inline-block;
+}
+
+/* Continer class used in all sections and to set max width */
+.container {
+  margin: 0 auto;
+  max-width: 1240px;
+  padding: 0 2%;
+}
+
 /* First section flower background with girl and gradient */
 #cover-photo {
   width: 100%;
@@ -246,7 +341,6 @@ a {
 
 .top-left {
   align-self: flex-start;
-  /* flex: 0 1 50%; */
 }
 
 .top-right {
@@ -260,13 +354,6 @@ a {
 .big {
   font-style: normal;
   font-weight: 700;
-}
-
-/* Continer class used in all sections and to set max width */
-.container {
-  margin: 0 auto;
-  max-width: 1240px;
-  padding: 0 2%;
 }
 
 .girl-text {
@@ -346,9 +433,11 @@ a {
       rgba(0, 0, 0, 0.25)
     ),
     url(images/mens-category.jpg);
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
   grid-area: a;
-  width: 100%;
+  /* width: 100%; */
 
   /* Row,col / row,col */
   /* grid-area: 1 / 1 / 2 / 3; */
@@ -364,6 +453,9 @@ a {
     url(images/trends-category.jpg);
   /* grid-area: 2 / 1 ; */
   grid-area: b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   /* grid-row: 2; */
   background-size: cover, cover;
 }
@@ -376,6 +468,9 @@ a {
     ),
     url(images/glasses-category.jpg);
   grid-area: c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-size: cover, cover;
 }
 
@@ -387,6 +482,9 @@ a {
     ),
     url(images/sale-category.jpg);
   grid-area: d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   background-size: cover, cover;
 }
@@ -399,6 +497,9 @@ a {
     ),
     url(images/bags-category.jpg);
   grid-area: e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-size: cover, cover;
 }
 
@@ -411,6 +512,9 @@ a {
     url(images/womens-category.jpg);
   background-size: cover, cover;
   grid-area: f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .white-text {
@@ -476,6 +580,31 @@ footer {
 }
 
 @media screen and (min-width: 600px) {
+  .nav {
+    margin: 0 auto;
+    padding: 20px;
+    width: auto;
+    height: 100px;
+  }
+
+  .head {
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .top-left {
+    align-self: flex-start;
+  }
+
+  .top-right {
+    align-self: flex-end;
+  }
+
+  .logo {
+    display: inline-block;
+  }
+
   .flexy {
     display: flex;
     justify-content: space-between;
@@ -489,19 +618,22 @@ footer {
   }
 
   .social {
-    text-align: right;
+    display: flex;
+    flex-direction: column;
     margin-right: 10px;
     line-height: 1.5;
   }
 
   .social-words {
-    display: inline;
+    display: inline-block;
+    text-align: right;
   }
 
   .catagoties {
     display: grid;
-    grid-template-areas: "a a b c"
-                         "d e f f";
+    grid-template-areas:
+      "a a b c"
+      "d e f f";
     height: 400px;
     grid-gap: 10px;
   }
@@ -549,7 +681,7 @@ footer {
         rgba(0, 0, 0, 0.25)
       ),
       url(images/sale-category.jpg);
-      grid-area: d;
+    grid-area: d;
     background-size: cover, cover;
   }
 
@@ -560,7 +692,7 @@ footer {
         rgba(0, 0, 0, 0.25)
       ),
       url(images/bags-category.jpg);
-      grid-area: e;
+    grid-area: e;
     background-size: cover, cover;
   }
 
