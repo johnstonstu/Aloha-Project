@@ -579,6 +579,8 @@ footer {
   max-height: 300px;
 }
 
+/* Display for screen when wider than 600px (bigger than mobile) */
+
 @media screen and (min-width: 600px) {
   .nav {
     margin: 0 auto;
@@ -631,6 +633,8 @@ footer {
 
   .catagoties {
     display: grid;
+
+    /* sets grid area for sectrion three with grid boxes  */
     grid-template-areas:
       "a a b c"
       "d e f f";
@@ -646,7 +650,6 @@ footer {
       ),
       url(images/mens-category.jpg);
 
-    /* Row,col / row,col */
     grid-area: a;
     background-size: cover, cover;
     width: 100%;
