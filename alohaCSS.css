@@ -245,6 +245,9 @@ table {
   font-style: normal;
 }
 
+
+/* Start of main CSS */
+
 html {
   font-size: 16px;
 }
@@ -267,13 +270,18 @@ h2 {
   margin-bottom: 1.5rem;
 }
 
-p {
+/* p {
   font-family: "Playfair Display", serif;
-}
+} */
 
-a {
+/* set font and color for nav links */
+.nav a {
   text-decoration: none;
   color: #e2574c;
+  font-family: Raleway, sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 1rem;
 }
 
 li {
@@ -305,26 +313,33 @@ li {
 
 }
 
+/* Second section of page */
 #summary {
   width: 100%;
   height: 266px;
   background-color: white;
 }
 
+/* Third section belowm on line 460 - 560 */
+
+/* Fourth section with JS carosel */
 #catalog {
   width: 100%;
   height: 250px;
   background-color: white;
 }
 
-/* Wave background in fifth section */
+/* Fifth Section with wave background */
 #update {
   width: 100%;
-  height: 300px;
+  height: 365px;
   background: url("images/wave-bkgd.jpg");
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
+  margin-bottom: 8px;
+  padding: 4rem 0;
+  display: block;
 }
 
 /* Nav class for top of page navagation */
@@ -342,9 +357,10 @@ li {
 
 .nav li{
   display: inline;
-  padding-right: 30px;
+  padding-right: 25px;
 }
 
+/* grid for header nav and icons */
 .head {
   display: grid;
   grid-template-areas:
@@ -355,10 +371,13 @@ li {
     padding-top: 13px;
 }
 
+/* aloha icon */
 .top-left {
   grid-area: a;
+  margin-bottom: 7px;
 }
 
+/* cart icon */
 .top-right {
   grid-area: b;
   text-align: right;
@@ -368,12 +387,14 @@ li {
   font-style: normal;
   font-weight: 700;
 }
+
 .girl-box{
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+/* white text on-top of banner girl */
 .girl-text {
   color: #fff;
   font-weight: 700;
@@ -390,7 +411,8 @@ li {
 
 .season {
   font-family: "Playfair Display", serif;
-  font-weight: 300;
+  font-weight: 400;
+  font-size: 2.5rem;
 }
 
 .new-collection {
@@ -416,16 +438,23 @@ li {
 
 .update p {
   font-family: "Raleway";
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   letter-spacing: 0.05rem;
   font-weight: 300;
+  line-height: 2;
 }
 
 .about p {
+  color: #2d2d2d;
   font-family: "Raleway";
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   letter-spacing: 0.05rem;
   font-weight: 300;
+  line-height: 2;
+}
+
+.shadow{
+  text-shadow: 2px 2px 4px hsla(0,0%,39%,.8);
 }
 
 /* Initalization of grid for third section, 6 boxes in total */
@@ -436,14 +465,13 @@ li {
     "b c"
     "d e"
     "f f";
-
-  /* grid-template: 1fr 1fr / 1fr 1fr 1fr 1fr; */
   height: 120vh;
-  grid-gap: 10px;
+  grid-gap: 8px;
+  font-size: 1.6rem;
 }
 
-/* test fot git update */
 
+/* 1st of the 6 grid boxes */
 .mens {
   background: linear-gradient(
       180deg,
@@ -455,13 +483,10 @@ li {
   justify-content: center;
   align-items: center;
   grid-area: a;
-  /* width: 100%; */
-
-  /* Row,col / row,col */
-  /* grid-area: 1 / 1 / 2 / 3; */
   background-size: cover, cover;
 }
 
+/* box 2 */
 .trends {
   background: linear-gradient(
       180deg,
@@ -478,6 +503,7 @@ li {
   background-size: cover, cover;
 }
 
+/* box 3 */
 .glasses {
   background: linear-gradient(
       180deg,
@@ -492,6 +518,7 @@ li {
   background-size: cover, cover;
 }
 
+/* box 4 */
 .sale {
   background: linear-gradient(
       180deg,
@@ -507,6 +534,7 @@ li {
   background-size: cover, cover;
 }
 
+/* box 5 */
 .bags {
   background: linear-gradient(
       180deg,
@@ -520,7 +548,7 @@ li {
   align-items: center;
   background-size: cover, cover;
 }
-
+/* box 5 */
 .womens {
   background: linear-gradient(
       180deg,
@@ -535,6 +563,7 @@ li {
   align-items: center;
 }
 
+
 .white-text {
   color: white;
 }
@@ -543,7 +572,8 @@ li {
   color: rgb(226, 87, 76);
 }
 
-/* should center items */
+/* different attemts to center things */
+
 .center {
   text-align: center;
   display: block;
@@ -552,8 +582,8 @@ li {
 }
 
 .centered{
-  position: absolute; /* or absolute */
-  top: 260px;
+  position: absolute;
+  top: 308px;
   left: 50%;
   transform: translate(-50%, -50%);
 
@@ -562,7 +592,6 @@ li {
 /* should center text */
 .center-text {
   text-align: center;
-  /* position: absolute; */
   top: 50%;
   left: 50%;
   margin-right: -50%;
@@ -571,19 +600,22 @@ li {
 
 footer {
   width: 100%;
-  height: 400px;
+  height: 300px;
   background-color: rgb(36, 36, 36);
 }
 
+/* turns off writing beside logos for mobile view */
 .social-words {
   display: none;
 }
 
-.flexy {
+/* flexbox for footer div */
+.foot-flexy {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: space-between;
+  padding: 4rem 0;
 }
 
 .bottom-left {
@@ -605,8 +637,25 @@ footer {
   max-height: 300px;
 }
 
-/* Display for screen when wider than 600px (bigger than mobile) */
+.copyright{
+  margin-bottom: 10px;
+}
 
+.contact{
+  margin-bottom: 10px;
+}
+
+.contact p{
+  display: inline;
+}
+
+.address{
+  margin-bottom: 10px;
+}
+
+
+
+/* Display for screen when wider than 600px (bigger than mobile) */
 @media screen and (min-width: 600px) {
   .nav {
     margin: 0 auto;
@@ -636,7 +685,7 @@ footer {
     display: inline-block;
   }
 
-  .flexy {
+  .foot-flexy {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -668,7 +717,7 @@ footer {
       "a a b c"
       "d e f f";
     height: 400px;
-    grid-gap: 10px;
+    grid-gap: 8px;
   }
 
   .mens {
