@@ -1,4 +1,3 @@
-
 * {
   box-sizing: border-box;
   outline: none;
@@ -245,7 +244,6 @@ table {
   font-style: normal;
 }
 
-
 /* Start of main CSS */
 
 html {
@@ -288,6 +286,9 @@ li {
   display: inline-block;
 }
 
+.social li a:hover{
+  color: #e2574c;
+}
 
 /* Continer class used in all sections and to set max width */
 .container {
@@ -310,7 +311,6 @@ li {
   background-size: cover, 150px 370px, cover;
   display: block;
   background-position-y: 0, 60px, 0;
-
 }
 
 /* Second section of page */
@@ -355,7 +355,7 @@ li {
   margin-bottom: -50px;
 }
 
-.nav li{
+.nav li {
   display: inline;
   padding-right: 25px;
 }
@@ -367,8 +367,8 @@ li {
     "a b"
     "c c";
   justify-content: space-between;
-    padding-bottom: 0px;
-    padding-top: 13px;
+  padding-bottom: 0px;
+  padding-top: 13px;
 }
 
 /* aloha icon */
@@ -388,7 +388,7 @@ li {
   font-weight: 700;
 }
 
-.girl-box{
+.girl-box {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -429,11 +429,30 @@ li {
   top: 50px;
 }
 
+input[type=email] {
+    padding: .5rem 1.75rem;
+    padding-right: 150px;
+    width: 100%;
+    border-radius: 15px;
+}
+
 .subscribe-form {
   display: block;
   margin: 2rem auto 0;
   position: relative;
   width: 90%;
+  font-family: "Raleway",sans-serif;
+}
+
+.sub-button{
+    background-color: #e2574c;
+    color: white;
+    position: absolute;
+    top: 2px;
+    right: 0px;
+    width: 100px;
+    height: 31px;
+    border-radius: 15px;
 }
 
 .update p {
@@ -453,8 +472,8 @@ li {
   line-height: 2;
 }
 
-.shadow{
-  text-shadow: 2px 2px 4px hsla(0,0%,39%,.8);
+.shadow {
+  text-shadow: 2px 2px 4px hsla(0, 0%, 39%, 0.8);
 }
 
 /* Initalization of grid for third section, 6 boxes in total */
@@ -469,7 +488,6 @@ li {
   grid-gap: 8px;
   font-size: 1.6rem;
 }
-
 
 /* 1st of the 6 grid boxes */
 .mens {
@@ -563,7 +581,6 @@ li {
   align-items: center;
 }
 
-
 .white-text {
   color: white;
 }
@@ -581,12 +598,11 @@ li {
   margin-right: auto;
 }
 
-.centered{
+.centered {
   position: absolute;
   top: 308px;
   left: 50%;
   transform: translate(-50%, -50%);
-
 }
 
 /* should center text */
@@ -616,6 +632,7 @@ footer {
   justify-content: center;
   align-content: space-between;
   padding: 4rem 0;
+  font-family: "Playfair Display",serif;
 }
 
 .bottom-left {
@@ -628,6 +645,13 @@ footer {
   text-align: center;
   line-height: 1.5;
   margin-top: 10px;
+  font-family: "Raleway",sans-serif;
+  font-weight: 300;
+
+}
+
+.social li a{
+  text-decoration: none;
 }
 
 .resize {
@@ -637,23 +661,31 @@ footer {
   max-height: 300px;
 }
 
-.copyright{
-  margin-bottom: 10px;
+.copyright {
+  margin-bottom: 1rem;
 }
 
-.contact{
-  margin-bottom: 10px;
+.contact {
+  margin-bottom: 1rem;
 }
 
-.contact p{
+.contact a{
+  color: white;
+}
+
+
+.contact a:hover{
+  color: #e2574c;
+}
+
+.contact p {
   display: inline;
 }
 
-.address{
-  margin-bottom: 10px;
+.address {
+  margin-bottom: 1rem;
+  color: #969696;
 }
-
-
 
 /* Display for screen when wider than 600px (bigger than mobile) */
 @media screen and (min-width: 600px) {
@@ -695,13 +727,19 @@ footer {
   .bottom-left {
     text-align: left;
     line-height: 1.5;
+    padding-left: 20px;
   }
 
   .social {
     display: flex;
     flex-direction: column;
     margin-right: 10px;
-    line-height: 1.5;
+    line-height: 2;
+    padding-right: 2rem;
+  }
+
+  .social li{
+    text-align: left;
   }
 
   .social-words {
