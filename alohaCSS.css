@@ -623,7 +623,7 @@ input[type="email"] {
 
 .centered {
   position: absolute;
-  top: 308px;
+  top: 285px;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -722,7 +722,7 @@ footer {
 
   .head {
     display: flex;
-    padding-top: 10px;
+    padding-top: 13px;
     padding-bottom: 10px;
   }
 
@@ -736,6 +736,10 @@ footer {
 
   .logo {
     display: inline-block;
+  }
+
+  .season {
+    font-size: 3rem;
   }
 
   .subscribe-form {
