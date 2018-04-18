@@ -1,6 +1,6 @@
 # Project 1
 
-##Aloha-Homepage:
+## Aloha-Homepage:
 
 The First Red-Academy Project. The requirements were to re-create the site provided for both mobile and desktop views:
 
