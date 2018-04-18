@@ -282,12 +282,25 @@ h2 {
   font-size: 1rem;
 }
 
+.nav a:hover {
+  color: #b64036;
+}
+
 li {
   display: inline-block;
 }
 
-.social li a:hover{
-  color: #e2574c;
+.social li a:hover {
+  color: #b64036;
+}
+
+.grid-text a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.grid-text a:hover {
+  color: #f5edc4;
 }
 
 /* Continer class used in all sections and to set max width */
@@ -427,32 +440,42 @@ li {
   font-size: 1.15rem;
   position: relative;
   top: 50px;
+  color: #2d2d2d;
 }
 
-input[type=email] {
-    padding: .5rem 1.75rem;
-    padding-right: 150px;
-    width: 100%;
-    border-radius: 15px;
+input[type="email"] {
+  padding: 0.5rem 1.75rem;
+  padding-right: 150px;
+  width: 100%;
+  border-radius: 25px;
 }
 
 .subscribe-form {
   display: block;
   margin: 2rem auto 0;
   position: relative;
-  width: 90%;
-  font-family: "Raleway",sans-serif;
+  width: 75%;
+  font-family: "Raleway", sans-serif;
+  line-height: 2;
 }
 
-.sub-button{
-    background-color: #e2574c;
-    color: white;
-    position: absolute;
-    top: 2px;
-    right: 0px;
-    width: 100px;
-    height: 31px;
-    border-radius: 15px;
+.subscribe-form #your-email {
+  height: 50px;
+  font-size: 1rem;
+  font-weight: 300;
+  font-family: "Raleway", sans-serif;
+}
+
+.sub-button {
+  background-color: #e2574c;
+  color: white;
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  width: 122px;
+  height: 43px;
+  border-radius: 25px;
+  font-size: 1rem;
 }
 
 .update p {
@@ -632,7 +655,7 @@ footer {
   justify-content: center;
   align-content: space-between;
   padding: 4rem 0;
-  font-family: "Playfair Display",serif;
+  font-family: "Playfair Display", serif;
 }
 
 .bottom-left {
@@ -645,12 +668,11 @@ footer {
   text-align: center;
   line-height: 1.5;
   margin-top: 10px;
-  font-family: "Raleway",sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 300;
-
 }
 
-.social li a{
+.social li a {
   text-decoration: none;
 }
 
@@ -669,13 +691,12 @@ footer {
   margin-bottom: 1rem;
 }
 
-.contact a{
+.contact a {
   color: white;
 }
 
-
-.contact a:hover{
-  color: #e2574c;
+.contact a:hover {
+  color: #b64036;
 }
 
 .contact p {
@@ -717,6 +738,10 @@ footer {
     display: inline-block;
   }
 
+  .subscribe-form {
+    width: 67%;
+  }
+
   .foot-flexy {
     display: flex;
     justify-content: space-between;
@@ -738,7 +763,7 @@ footer {
     padding-right: 2rem;
   }
 
-  .social li{
+  .social li {
     text-align: left;
   }
 
