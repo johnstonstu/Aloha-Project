@@ -338,8 +338,9 @@ li {
 /* Fourth section with JS carosel */
 #catalog {
   width: 100%;
-  height: 250px;
+  /* height: 250px; */
   background-color: white;
+  margin-bottom: 50px;
 }
 
 /* Fifth Section with wave background */
@@ -370,7 +371,7 @@ li {
 
 .nav li {
   display: inline;
-  padding-right: 25px;
+  padding-right: 15px;
 }
 
 /* grid for header nav and icons */
@@ -425,7 +426,7 @@ li {
 .season {
   font-family: "Playfair Display", serif;
   font-weight: 400;
-  font-size: 2.5rem;
+  font-size: 2.1rem;
 }
 
 .new-collection {
@@ -460,7 +461,7 @@ input[type="email"] {
 }
 
 .subscribe-form #your-email {
-  height: 50px;
+  height: 3rem;
   font-size: 1rem;
   font-weight: 300;
   font-family: "Raleway", sans-serif;
@@ -480,7 +481,6 @@ input[type="email"] {
 
 .update p {
   font-family: "Raleway";
-  font-size: 1.15rem;
   letter-spacing: 0.05rem;
   font-weight: 300;
   line-height: 2;
@@ -623,7 +623,7 @@ input[type="email"] {
 
 .centered {
   position: absolute;
-  top: 285px;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -637,6 +637,44 @@ input[type="email"] {
   transform: translate(-50%, -50%);
 }
 
+.top-carousel h2,
+span {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.carousel-cell h3 {
+  color: #e2574c;
+  font-family: "Playfair Display", serif;
+  /* font-size: 1.5rem; */
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.product-type {
+  margin-bottom: 0.75rem;
+}
+
+.carousel-cell p {
+  color: #969696;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  font-size: 0.5rem;
+}
+
+.carousel-cell {
+  margin-left: 50vw;
+}
+
+.carousel-image {
+  height: auto;
+  width: 50vw;
+}
+
+/* cell number */
 footer {
   width: 100%;
   height: 300px;
@@ -783,7 +821,7 @@ footer {
     grid-template-areas:
       "a a b c"
       "d e f f";
-    height: 400px;
+    height: 363px;
     grid-gap: 8px;
   }
 

@@ -17,6 +17,9 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+"
         crossorigin="anonymous"></script>
 
+    <!-- Flickity CDN -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
     <!-- my css file -->
     <link href="alohaCSS.css" type="text/css" rel="stylesheet">
 
@@ -98,6 +101,61 @@
 
     <!-- Fourth section with JS carousel (cycles through clothing images) -->
     <section id="catalog">
+        <div class="top-carousel">
+            <h2>Most-loved
+                <span class="big">Products</span>
+            </h2>
+        </div>
+        <div class="main-carousel">
+            <div class="carousel-cell">
+                <img class="carousel-image" src="images/stretch-knit-dress.jpg" alt="Image of stretch knit dress">
+                <p class="product-type">Dresses</p>
+                <h3>Stretch Knit Dress</h3>
+                <p class="product-price">$169.00</p>
+            </div>
+            <div class="carousel-cell">
+                <img class="carousel-image" src="images/cotton-blue-shirt.jpg" alt="Image of cotton blue shirt">
+                <p class="product-type">Shirts</p>
+                <h3>Cotton Blue Shirt</h3>
+                <p class="product-price">$89.00</p>
+            </div>
+            <div class="carousel-cell">
+                <img class="carousel-image" src="images/checked-stretch-dress.jpg" alt="Image of checked stretch dress">
+                <p class="product-type">Dresses</p>
+                <h3>Checked Stretch Dress</h3>
+                <p class="product-price">$129.00</p>
+            </div>
+            <div class="carousel-cell">
+                <img class="carousel-image" src="images/blue-hipster-backpack.jpg" alt="Image of blue hipster backpack">
+                <p class="product-type">Bags</p>
+                <h3>Blue Hipster Backpack</h3>
+                <p class="product-price">$69.00</p>
+            </div>
+            <div class="carousel-cell">
+                <img class="carousel-image" src="images/demin-overall-shorts.jpg" alt="Image of denim overall shorts">
+                <p class="product-type">Denim</p>
+                <h3>Denim Overall Shorts</h3>
+                <p class="product-price">$89.00</p>
+            </div>
+            <div class="carousel-cell">
+                <img class="carousel-image" src="images/pink-dotted-dress.jpg" alt="Image of pink dotted dress">
+                <p class="product-type">Dresses</p>
+                <h3>Pink Dotted Dress</h3>
+                <p class="product-price">$99.00</p>
+            </div>
+            <div class="carousel-cell">
+                <img class="carousel-image" src="images/blue-silk-dress.jpg" alt="Image of blue silk dress">
+                <p class="product-type">Dresses</p>
+                <h3>Blue Silk Dress</h3>
+                <p class="product-price">$119.00</p>
+            </div>
+            <div class="carousel-cell">
+                <img class="carousel-image" src="images/cotton-yellow-tshirt.jpg" alt="Image of cotton yellow tshirt">
+                <p class="product-type">Shirts</p>
+                <h3>Cotton Yellow Tshirt</h3>
+                <p class="product-price">$39.00</p>
+            </div>
+        </div>
     </section>
 
     <!-- Fifth section with update form and wave background -->
@@ -111,7 +169,7 @@
                 <p>Stay updated on our latest product releases, be the first to find out about
                     <br>upcoming sales, and get free style tips from our blog. Unsubscribe at anytime.</p>
                 <form class="subscribe-form">
-                    <input type="email" name="your_email" id="your-email" value="" placeholder="Your Email">
+                    <input class="form-input" type="email" name="your_email" id="your-email" value="" placeholder="Your Email">
                     <input class="sub-button" type="submit" name="subscribe" value="Subscribe" id="subscribe">
                 </form>
             </div>
@@ -175,8 +233,14 @@
 
     </footer>
 
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
 
+    <!-- Flickity CDN -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
+    <!-- my js files -->
     <script src="scripts.js"></script>
 </body>
 

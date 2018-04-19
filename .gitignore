@@ -10,3 +10,6 @@ ehthumbs.db
 
 # Ignore npm packages
 node_modules/
+
+# Ignore eslint
+.eslintrc.js
