@@ -403,24 +403,22 @@ li {
 }
 
 .girl-box {
+  padding-top: 140px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
 }
 
 /* white text on-top of banner girl */
 .girl-text {
   color: #fff;
   font-weight: 700;
-  left: 50%;
   line-height: 1;
   /* position: absolute; */
   text-align: center;
   text-shadow: 2px 2px 4px hsla(0, 0%, 39%, 0.8);
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 80%;
   font-size: 3.75rem;
+  z-index: 1;
 }
 
 .season {
@@ -684,6 +682,7 @@ footer {
 /* turns off writing beside logos for mobile view */
 .social-words {
   display: none;
+  font-size: 1rem;
 }
 
 /* flexbox for footer div */
@@ -778,6 +777,14 @@ footer {
 
   .season {
     font-size: 3rem;
+  }
+  .about {
+    max-width: 720px;
+  }
+
+  .top-carousel h2,
+  span {
+    font-size: 2.5rem;
   }
 
   .subscribe-form {
