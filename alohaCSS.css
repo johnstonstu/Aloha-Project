@@ -521,7 +521,7 @@ input[type="email"] {
     "b c"
     "d e"
     "f f";
-  height: 120vh;
+  height: 50vw;
   grid-gap: 8px;
   font-size: 1.6rem;
 }
@@ -750,6 +750,10 @@ footer {
   text-decoration: none;
 }
 
+.social svg {
+  min-width: 25px;
+}
+
 .resize {
   width: 50%;
   max-width: 100px;
@@ -844,9 +848,9 @@ footer {
   }
 
   .subscribe-form {
-    max-width: 67%;
     position: absolute;
-    left: 21%;
+    left: 6%;
+    width: 100%;
   }
 
   .sub-button {
@@ -919,6 +923,7 @@ footer {
     grid-area: a;
     background-size: cover, cover;
     width: 100%;
+    background-position: center, center;
   }
 
   .trends {
@@ -930,6 +935,7 @@ footer {
       url(images/trends-category.jpg);
     grid-area: b;
     background-size: cover, cover;
+    background-position: center, center;
   }
 
   .glasses {
@@ -941,6 +947,7 @@ footer {
       url(images/glasses-category.jpg);
     grid-area: c;
     background-size: cover, cover;
+    background-position: center, center;
   }
 
   .sale {
@@ -952,6 +959,7 @@ footer {
       url(images/sale-category.jpg);
     grid-area: d;
     background-size: cover, cover;
+    background-position: center, center;
   }
 
   .bags {
@@ -963,6 +971,7 @@ footer {
       url(images/bags-category.jpg);
     grid-area: e;
     background-size: cover, cover;
+    background-position: center, center;
   }
 
   .womens {
@@ -973,6 +982,7 @@ footer {
       ),
       url(images/womens-category.jpg);
     background-size: cover, cover;
+    background-position: center, center;
     grid-area: f;
   }
 }
