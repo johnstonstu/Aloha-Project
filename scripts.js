@@ -1,6 +1,7 @@
 $(document).ready(function() {
   // Carousel
   $(".main-carousel").flickity({
+    cellAlign: "left",
     wrapAround: true,
     contain: true,
     fullscreen: true,
@@ -27,6 +28,7 @@ $(document).ready(function() {
     .not('[href="#"]')
     .not('[href="#0"]')
     .click(function(event) {
+      var headerNav = $(".head").height();
       // On-page links
       if (
         location.pathname.replace(/^\//, "") ==
@@ -44,22 +46,10 @@ $(document).ready(function() {
           event.preventDefault();
           $("html, body").animate(
             {
-              scrollTop: target.offset().top
+              scrollTop: target.offset().top - headerNav
             },
             1000,
-            function() {
-              // Callback after animation
-              // Must change focus!
-              var $target = $(target);
-              $target.focus();
-              if ($target.is(":focus")) {
-                // Checking if the target was focused
-                return false;
-              } else {
-                $target.attr("tabindex", "-1"); // Adding tabindex for elements not focusable
-                $target.focus(); // Set focus again
-              }
-            }
+            function() {}
           );
         }
       }

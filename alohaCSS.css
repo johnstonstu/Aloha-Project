@@ -340,17 +340,23 @@ li {
   width: 100%;
   /* height: 250px; */
   background-color: white;
-  margin-bottom: 50px;
+  margin-bottom: 56px;
+  padding-top: 20px;
+  padding-bottom: 56px;
 }
 
 /* Fifth Section with wave background */
 #update {
   width: 100%;
   height: 365px;
-  background: url("images/wave-bkgd.jpg");
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: cover;
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.25) 0,
+      rgba(0, 0, 0, 0.25)
+    ),
+    url("images/wave-bkgd.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: center, bottom;
   margin-bottom: 8px;
   padding: 4rem 0;
   display: block;
@@ -383,6 +389,9 @@ li {
   justify-content: space-between;
   padding-bottom: 0px;
   padding-top: 13px;
+  top: 0;
+  position: sticky;
+  z-index: 10;
 }
 
 /* aloha icon */
@@ -419,6 +428,7 @@ li {
   text-shadow: 2px 2px 4px hsla(0, 0%, 39%, 0.8);
   font-size: 3.75rem;
   z-index: 1;
+  padding-left: 24px;
 }
 
 .season {
@@ -445,7 +455,7 @@ li {
 input[type="email"] {
   padding: 0.5rem 1.75rem;
   padding-right: 150px;
-  width: 100%;
+  /* width: 100%; */
   border-radius: 25px;
 }
 
@@ -468,13 +478,19 @@ input[type="email"] {
 .sub-button {
   background-color: #e2574c;
   color: white;
-  position: absolute;
-  top: 3px;
-  right: 3px;
+  position: relative;
+  right: -115px;
   width: 122px;
-  height: 43px;
+  height: 45px;
   border-radius: 25px;
   font-size: 1rem;
+  top: -46px;
+}
+
+.subformbutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .update p {
@@ -523,6 +539,7 @@ input[type="email"] {
   align-items: center;
   grid-area: a;
   background-size: cover, cover;
+  background-position: center, center;
 }
 
 /* box 2 */
@@ -540,6 +557,7 @@ input[type="email"] {
   align-items: center;
   /* grid-row: 2; */
   background-size: cover, cover;
+  background-position: center, center;
 }
 
 /* box 3 */
@@ -555,6 +573,7 @@ input[type="email"] {
   justify-content: center;
   align-items: center;
   background-size: cover, cover;
+  background-position: center, center;
 }
 
 /* box 4 */
@@ -571,6 +590,7 @@ input[type="email"] {
   align-items: center;
 
   background-size: cover, cover;
+  background-position: center, center;
 }
 
 /* box 5 */
@@ -586,6 +606,7 @@ input[type="email"] {
   justify-content: center;
   align-items: center;
   background-size: cover, cover;
+  background-position: center, center;
 }
 /* box 5 */
 .womens {
@@ -596,6 +617,7 @@ input[type="email"] {
     ),
     url(images/womens-category.jpg);
   background-size: cover, cover;
+  background-position: center, center;
   grid-area: f;
   display: flex;
   justify-content: center;
@@ -635,10 +657,16 @@ input[type="email"] {
   transform: translate(-50%, -50%);
 }
 
+.top-carousel {
+  margin-bottom: 80px;
+  color: #2d2d2d;
+}
+
 .top-carousel h2,
 span {
   text-align: center;
   font-size: 2rem;
+  /* color: #2d2d2d; */
 }
 
 .carousel-cell h3 {
@@ -647,6 +675,14 @@ span {
   /* font-size: 1.5rem; */
   margin-bottom: 1rem;
   text-align: center;
+}
+
+.carousel-cell img {
+  max-width: 100%;
+}
+
+.flickity-page-dots {
+  bottom: -50px;
 }
 
 .product-type {
@@ -664,12 +700,13 @@ span {
 }
 
 .carousel-cell {
-  margin-left: 50vw;
+  width: 100%;
+  text-align: center;
 }
 
 .carousel-image {
   height: auto;
-  width: 50vw;
+  margin-bottom: 30px;
 }
 
 /* cell number */
@@ -747,6 +784,10 @@ footer {
 
 /* Display for screen when wider than 600px (bigger than mobile) */
 @media screen and (min-width: 600px) {
+  #update {
+    background-size: cover, cover;
+  }
+
   .nav {
     margin: 0 auto;
     padding: 20px;
@@ -787,8 +828,37 @@ footer {
     font-size: 2.5rem;
   }
 
+  .carousel-cell {
+    width: 50%;
+  }
+
+  .carousel-cell h3 {
+    font-size: 1.5rem;
+  }
+
+  .carousel-cell p {
+    font-size: 0.75rem;
+  }
+  .carousel-cell .product-price {
+    font-size: 1rem;
+  }
+
   .subscribe-form {
-    width: 67%;
+    max-width: 67%;
+    position: absolute;
+    left: 21%;
+  }
+
+  .sub-button {
+    background-color: #e2574c;
+    color: white;
+    position: relative;
+    right: 127px;
+    width: 122px;
+    height: 45px;
+    border-radius: 25px;
+    font-size: 1rem;
+    top: 0px;
   }
 
   .foot-flexy {
@@ -814,6 +884,12 @@ footer {
 
   .social li {
     text-align: left;
+  }
+
+  .social li .fab,
+  .svg-inline--fa {
+    width: 20px !important;
+    margin-right: 5px;
   }
 
   .social-words {
@@ -898,5 +974,12 @@ footer {
       url(images/womens-category.jpg);
     background-size: cover, cover;
     grid-area: f;
+  }
+}
+
+/* Over 1240px screen size  */
+@media only screen and (min-width: 1240px) {
+  .carousel-cell {
+    width: 25%;
   }
 }
