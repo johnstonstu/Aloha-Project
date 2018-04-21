@@ -6,7 +6,8 @@ $(document).ready(function() {
     contain: true,
     fullscreen: true,
     lazyLoad: 1,
-    prevNextButtons: false
+    prevNextButtons: false,
+    autoPlay: true
   });
 
   // Form submit
