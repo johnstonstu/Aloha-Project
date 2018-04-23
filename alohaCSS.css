@@ -440,7 +440,7 @@ li {
 }
 
 .new-collection {
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   text-transform: uppercase;
   font-size: 1.25rem;
   margin-bottom: 1.5rem;
@@ -454,57 +454,69 @@ li {
   color: #2d2d2d;
 }
 
-input[type="email"] {
-  padding: 0.5rem 1.75rem;
-  padding-right: 150px;
-  /* width: 100%; */
-  border-radius: 25px;
-}
-
-.subscribe-form {
+/* email submit form in fifth section #update */
+.form-container {
   display: block;
   margin: 2rem auto 0;
   position: relative;
-  width: 100%;
-  font-family: "Raleway", sans-serif;
-  line-height: 2;
-}
-
-.subscribe-form #your-email {
-  height: 3rem;
+  width: 90%;
   font-size: 1rem;
-  font-weight: 300;
-  font-family: "Raleway", sans-serif;
 }
 
-.sub-button {
-  background-color: #e2574c;
-  color: white;
-  position: relative;
-  right: -112px;
-  width: 122px;
-  height: 42px;
+input[type="email"],
+input[type="submit"] {
+  border: 0;
   border-radius: 25px;
-  font-size: 1rem;
-  top: -44px;
+  font-family: "Raleway", sans-serif;
 }
 
-.subformbutton {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+input[type="email"] {
+  width: 100%;
+  padding: 0.5rem 1.75rem;
+  padding-right: 150px;
+  /* height: 3rem; */
+}
+
+input[type="submit"] {
+  position: absolute;
+  background-color: #e2574c;
+  color: #fff;
+  padding: 0.25rem 1.5rem;
+  right: 0.25rem;
+  top: 0.75rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+input[type="email"]:focus {
+  box-shadow: 1px 1px 6px hsla(0, 0%, 39%, 0.8);
+}
+
+input[type="submit"]:focus,
+input[type="submit"]:hover {
+  background-color: #b64036;
+}
+
+input[type="email"]:focus,
+input[type="submit"]:focus {
+  outline: none;
+}
+
+.sub-button:hover {
+  background-color: #b64036;
 }
 
 .update p {
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   letter-spacing: 0.05rem;
   font-weight: 300;
   line-height: 2;
+  margin-bottom: 2rem;
 }
 
 .about p {
   color: #2d2d2d;
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-size: 1rem;
   letter-spacing: 0.05rem;
   font-weight: 300;
@@ -610,7 +622,7 @@ input[type="email"] {
   background-size: cover, cover;
   background-position: center, center;
 }
-/* box 5 */
+/* box 6 */
 .womens {
   background: linear-gradient(
       180deg,
@@ -791,10 +803,7 @@ footer {
 
 /* Display for screen when wider than 600px (bigger than mobile) */
 @media screen and (min-width: 600px) {
-  /* #update {
-    background-size: cover, cover;
-  } */
-
+  /* nav bar changes to full across top */
   .nav {
     margin: 0 auto;
     padding: 20px;
@@ -834,6 +843,10 @@ footer {
     font-size: 1.15rem;
   }
 
+  .grid-text a {
+    font-size: 2rem;
+  }
+
   .top-carousel h2,
   span {
     font-size: 2.5rem;
@@ -854,27 +867,14 @@ footer {
     font-size: 1rem;
   }
 
-  .subscribe-form {
-    position: absolute;
-    left: 6%;
-    width: 100%;
+  /* keeps email form to smaller size on bigger screens */
+  .form-container {
+    width: 67%;
+    max-width: 420px;
   }
 
-  input[type="email"] {
-    width: 70%;
-    max-width: 456px;
-  }
-
-  .sub-button {
-    background-color: #e2574c;
-    color: white;
-    position: relative;
-    right: 127px;
-    width: 122px;
-    height: 42px;
-    border-radius: 25px;
-    font-size: 1rem;
-    top: 0px;
+  input[type="submit"] {
+    top: 1.2rem;
   }
 
   .foot-flexy {
@@ -902,6 +902,7 @@ footer {
     text-align: left;
   }
 
+  /* important was necessary to override font awesome inline styling */
   .social li .fab,
   .svg-inline--fa {
     width: 20px !important;
