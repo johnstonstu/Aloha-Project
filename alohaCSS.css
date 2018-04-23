@@ -245,7 +245,9 @@ table {
   font-style: normal;
 }
 
+/* --------------------------------------------------------------- */
 /* Start of main CSS */
+/* --------------------------------------------------------------- */
 
 html {
   font-size: 16px;
@@ -268,10 +270,6 @@ h2 {
   font-style: italic;
   margin-bottom: 1.5rem;
 }
-
-/* p {
-  font-family: "Playfair Display", serif;
-} */
 
 /* set font and color for nav links */
 .nav a {
@@ -465,6 +463,7 @@ li {
 
 input[type="email"],
 input[type="submit"] {
+  font-size: 1rem;
   border: 0;
   border-radius: 25px;
   font-family: "Raleway", sans-serif;
@@ -474,7 +473,8 @@ input[type="email"] {
   width: 100%;
   padding: 0.5rem 1.75rem;
   padding-right: 150px;
-  /* height: 3rem; */
+  height: 45px;
+  font-weight: 300;
 }
 
 input[type="submit"] {
@@ -483,9 +483,10 @@ input[type="submit"] {
   color: #fff;
   padding: 0.25rem 1.5rem;
   right: 0.25rem;
-  top: 0.75rem;
+  top: 0.2rem;
   font-weight: 700;
   cursor: pointer;
+  height: 40px;
 }
 
 input[type="email"]:focus {
@@ -500,10 +501,6 @@ input[type="submit"]:hover {
 input[type="email"]:focus,
 input[type="submit"]:focus {
   outline: none;
-}
-
-.sub-button:hover {
-  background-color: #b64036;
 }
 
 .update p {
@@ -523,6 +520,7 @@ input[type="submit"]:focus {
   line-height: 2;
 }
 
+/* adds shadow to text */
 .shadow {
   text-shadow: 2px 2px 4px hsla(0, 0%, 39%, 0.8);
 }
@@ -801,7 +799,10 @@ footer {
   color: #969696;
 }
 
+/* --------------------------------------------------------------- */
 /* Display for screen when wider than 600px (bigger than mobile) */
+/* --------------------------------------------------------------- */
+
 @media screen and (min-width: 600px) {
   /* nav bar changes to full across top */
   .nav {
@@ -874,7 +875,7 @@ footer {
   }
 
   input[type="submit"] {
-    top: 1.2rem;
+    top: 0.5rem;
   }
 
   .foot-flexy {
@@ -1000,7 +1001,10 @@ footer {
   }
 }
 
+/* --------------------------------------------------------------- */
 /* Over 1240px screen size  */
+/* --------------------------------------------------------------- */
+
 @media only screen and (min-width: 1240px) {
   .carousel-cell {
     width: 25%;
