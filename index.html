@@ -7,11 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <!-- css reset, now included in top of alohaCSS.css file -->
-    <!-- <link rel="stylesheet" href="reset.css"> -->
-
-    <!-- google fonts, fonts now included with @font-face in alohaCSS.css -->
-    <!-- <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i|Raleway:400,400i,700,700i" rel="stylesheet"> -->
 
     <!-- font awesome icons -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+"
@@ -21,7 +16,10 @@
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 
     <!-- my css file -->
-    <link href="styles.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/fonts.css">
+    <link rel="stylesheet" href="styles/styles.css">
+
 
     <title>Aloha Apparel Co.</title>
 
@@ -54,9 +52,9 @@
     </header>
 
     <!-- First main section with flower background and girl pic -->
-    <section id="cover-photo">
-        <div class="container girl-box">
-            <div class="white-text girl-text shadow">
+    <section class="cover-photo">
+        <div class="container hero-banner">
+            <div class="white-text hero-text shadow">
                 <p class="new-collection">New Collection</p>
                 <p class="season">Spring/Summer 2018</p>
             </div>
@@ -64,11 +62,11 @@
     </section>
 
     <!-- Second section 'summary' with white background -->
-    <section id="summary">
+    <section class="summary">
         <div class="container">
             <div class="center about">
                 <h2>Hand-Crafted
-                    <span class="big">Styles</span>
+                    <span class="bold">Styles</span>
                 </h2>
                 <p>Aloha Apparel Co. sells only the finest read-to-travel clothing. Browse our current selection of products
                     and sign-up for updates below.
@@ -78,7 +76,7 @@
     </section>
 
     <!-- Third section with Grid boxes -->
-    <section id="shop" class="catagoties big white-text new-collection shadow">
+    <section class="catagoties bold white-text new-collection shadow">
         <div class="mens grid-text">
             <a href="#">Mens</a>
         </div>
@@ -103,7 +101,7 @@
     <section id="catalog">
         <div class="top-carousel">
             <h2>Most-loved
-                <span class="big">Products</span>
+                <span class="bold">Products</span>
             </h2>
         </div>
         <div class="main-carousel">
@@ -159,12 +157,12 @@
     </section>
 
     <!-- Fifth section with update form and wave background -->
-    <section id="update">
+    <section class="update">
         <div class="container">
-            <div class="center white-text update shadow">
+            <div class="center white-text sign-up shadow">
                 <h2>
                     Sign-up for
-                    <span class="big"> Updates</span>
+                    <span class="bold"> Updates</span>
                 </h2>
                 <p>Stay updated on our latest product releases, be the first to find out about
                     <br>upcoming sales, and get free style tips from our blog. Unsubscribe at anytime.</p>
