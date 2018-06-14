@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function () {
   // Carousel
   $(".main-carousel").flickity({
     cellAlign: "left",
@@ -11,7 +11,7 @@ $(document).ready(function() {
   });
 
   // Form submit
-  $(".sub-button").on("click", function(event) {
+  $(".sub-button").on("click", function (event) {
     // Code to run when button clicked...
     event.preventDefault();
 
@@ -37,12 +37,12 @@ $(document).ready(function() {
     // Remove links that don't actually link to anything
     .not('[href="#"]')
     .not('[href="#0"]')
-    .click(function(event) {
+    .click(function (event) {
       var headerNav = $(".head").height();
       // On-page links
       if (
         location.pathname.replace(/^\//, "") ==
-          this.pathname.replace(/^\//, "") &&
+        this.pathname.replace(/^\//, "") &&
         location.hostname == this.hostname
       ) {
         // Figure out element to scroll to
@@ -59,11 +59,11 @@ $(document).ready(function() {
               scrollTop: target.offset().top - headerNav
             },
             1000,
-            function() {}
+            function () { }
           );
         }
       }
     });
 
-  console.log("this better work");
+
 });
