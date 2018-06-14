@@ -24,7 +24,7 @@ https://redacademy.github.io/aloha-apparel/#
 - LOTS of debugging CSS with chrome 'inspect'
 - Plan for mobile first in future projects
 
-### Major obsticles:
+### Major obstacles:
 
 - CSS is tricky
 - Flexbox
